@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        a(href="/") Return to the homepage
+        form(action="/update-cobj" method="post")
+            label(for="name") Name
+            input(type='text' name='name')
+            label(for="gender") Gender
+            input(type='text' name='gender')
+            label(for="date_of_birth") Date of Birth
+            input(type='text' name='date_of_birth')
+            input(type='submit')
